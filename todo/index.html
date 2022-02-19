@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+    <title>Todo</title>
+</head>
+
+<body>
+    <header>
+        <form id="add-task-form">
+            <input type="text" placeholder="Type your next task" required />
+            <button class="btn" type="submit">
+                Add Task
+            </button>
+        </form>
+    </header>
+    <main>
+        <div class="tasks-container">
+            <h2>Tasks - <span id="tasks-counter">0/4</span> </h2>
+            <ul id="tasks">
+                <li>
+                    <span>A simple task to do</span>
+                    <button class="btn">Complete</button>
+                </li>
+                <li class="completed">
+                    <span>Another task with long text to do</span>
+                    <button class="btn">Complete</button>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <script src="./main.js"></script>
+</body>
+
+</html>
